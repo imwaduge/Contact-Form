@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <link rel="icon" type="image/x-icon" href="contactus/favicon.ico">
+    <link rel="stylesheet" href="contactus/contactstyle.css">
+</head>
+<body>
+
+    <div class="NavBar">
+        <img class="Logo" src="contactus/logo.png" alt="Logo" />
+        <div class="NavItem">
+            <a href="index.html" class="Home">Home</a>
+            <a href="aboutus.html" class="Aboutus">AboutUs</a>
+            <a href="./sinhala/Fonts.zip" class="Support">DownloadFonts</a>
+            <a href="contact.html" class="Contact">Contact</a>
+        </div>
+    </div>
+
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Get in touch</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="c03f2b13-3732-4afd-a51c-4cc87b8f01dd">
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+            <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+            <button type="submit">Submit <img src="contactus/arrow_icon.png" alt=""></button>
+        </form>
+        <div class="contact-right">
+            <img src="contactus/right_img.png" alt="">
+        </div>
+    </div>
+    
+</body>
+</html>
